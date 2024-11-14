@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey" rel="stylesheet">
+    <title>Got Cents??</title>
+    <link rel="stylesheet" href="assets/style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Got Cents????</h1>
+      <div>
+        <h2>Count Your Coins</h2>
+        <ul>
+          <li>
+            <h3>Pennies</h3>
+            <p id="pennies-el">0</p>
+          </li>
+          <li>
+            <h3>Nickels</h3>
+            <p id="nickels-el">0</p>
+          </li>
+          <li>
+            <h3>Dimes</h3>
+            <p id="dimes-el">0</p>
+          </li>
+          <li>
+            <h3>Quarters</h3>
+            <p id="quarters-el">0</p>
+          </li>
+        </ul>
+      </div>
+      <div id="button-container">
+        <button class="increment-btn" onclick="incrementPennyCount()">
+          Pennies +1
+        </button>
+        <button class="increment-btn" onclick="incrementNickelCount()">
+          Nickels +1
+        </button>
+        <button class="increment-btn" onclick="incrementDimeCount()">
+          Dimes +1
+        </button>
+        <button class="increment-btn" onclick="incrementQuarterCount()">
+          Quarters +1
+        </button>
+        <br />
+        <button id="save-btn" onclick="save()">Save</button>
+        <button id="history-btn" onclick="toggleHistory()">
+          View/Hide History
+        </button>
+        <button id="clear-counts-btn" onclick="clearCounts()">Clear Counts</button>
+       
+      </div>
+
+      <div id="history-container">
+        <h3> - History - </h3>
+        <ul>
+          <li id="penny-li">Pennies : </li>
+          <li id="nickel-li">Nickels : </li>
+          <li id="dime-li">Dimes : </li>
+          <li id="quarter-li">Quarters : </li>
+        </ul>
+        <button id="clear-history-btn" onclick="clearHistory()">Clear History</button>
+      </div>
+    </div>
+    <script src="/assets/scripts/index.js"></script>
+  </body>
+</html>
